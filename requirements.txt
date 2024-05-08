@@ -1,11 +1,16 @@
+asgiref
 black
 click
+dj-database-url
 Django
+gunicorn
 mypy-extensions
 packaging
 pathlib
 pathspec
 platformdirs
+psycopg2-binary
 sqlparse
 tomli
 typing_extensions
+whitenoise
