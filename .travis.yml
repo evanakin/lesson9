@@ -1,9 +1,22 @@
 language: python
 python:
   - "3.9.6"
+
+addons:
+  apt:
+    packages:
+      - sqlite3
+
+before_install:
+  - sudo apt-get update
+  - sudo apt-get install sqlite3
+  # Check SQLite version to ensure it's the one needed
+  - sqlite3 --version
+
 install:
   - pip install -r requirements.txt
-  - python manage.py migrate
+  # Ensure migrate is part of the script, not install, to see output during build
 script:
+  - python manage.py migrate
   - black --check blogging mysite polling
   - python manage.py test
