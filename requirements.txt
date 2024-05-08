@@ -14,3 +14,6 @@ sqlparse
 tomli
 typing_extensions
 whitenoise
+urllib3
+requests
+djangorestframework
