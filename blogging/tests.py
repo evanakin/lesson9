@@ -54,8 +54,8 @@ class FrontEndTestCase(TestCase):
         # the content of the rendered response is always a bytestring
         resp_text = resp.content.decode(resp.charset)
         self.assertTrue(
-            "My Cool Blog Posts" in resp_text or "Recent Posts" in resp_text,
-            "Neither 'My Cool Blog Posts' nor 'Recent Posts' found in response",
+            "Coolest Post" in resp_text or "Recent Posts" in resp_text,
+            "Neither 'Coolest Post' nor 'Recent Posts' found in response",
         )
         for count in range(1, 11):
             title = "Post %d Title" % count
