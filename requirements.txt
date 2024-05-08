@@ -1,4 +1,4 @@
-black==24.4.2
+black==22.8.0
 click==8.1.7
 Django==4.2.12
 mypy-extensions==1.0.0
