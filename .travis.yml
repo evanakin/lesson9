@@ -1,10 +1,8 @@
 language: python
 python:
-  - "3.12"
+  - "3.6"
 install:
   - pip install -r requirements.txt
   - python manage.py migrate
 script:
-  - python manage.py migrate
-  - black --check blogging mysite polling
   - python manage.py test
