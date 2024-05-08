@@ -1,5 +1,11 @@
-asgiref
+black
+click
 Django
+mypy-extensions
+packaging
 pathlib
+pathspec
+platformdirs
 sqlparse
+tomli
 typing_extensions
